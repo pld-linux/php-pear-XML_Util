@@ -24,7 +24,7 @@ Selection of methods that are often needed when working with XML
 documents. Functionality includes creating of attribute lists from
 arrays, creation of tags, validation of XML names and more.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Zbiór metod czêsto stosowanych podczas pracy z dokumentami XML.
