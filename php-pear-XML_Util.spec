@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - XML utility class
 Summary(pl):	%{_pearname} - klasa narzêdziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
-Version:	0.6.1
+Version:	1.0.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	8cff110fba140ed5e73dce811cf4aa0e
+# Source0-md5:	2ab195b38e78b207c3ad89d74373823b
 URL:		http://pear.php.net/package/XML_Util/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
