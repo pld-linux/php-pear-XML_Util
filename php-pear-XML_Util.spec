@@ -3,15 +3,16 @@
 %define         _subclass       Util
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - XML Utility class
 Summary(pl):	%{_pearname} - klasa narzêdziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
-Version:	0.5.1
+Version:	0.5.2
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	ef3be2178fc0f6c5a95a0149f5f99d9e
+# Source0-md5:	e76993585c2d3d755ea7cf53261a014a
 URL:		http://pear.php.net/package/XML_Util/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
