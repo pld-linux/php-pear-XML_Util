@@ -1,12 +1,10 @@
-# ToDo:
-# - pl summary
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       Util
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - XML Utility class
-#Summary(pl):	%{_pearname} -
+Summary(pl):	%{_pearname} - klasa narzêdziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
