@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XML utility class
-Summary(pl.UTF-8):   %{_pearname} - klasa narzędziowa do obróbki XML-a
+Summary(pl.UTF-8):	%{_pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
 Version:	1.1.4
 Release:	1
