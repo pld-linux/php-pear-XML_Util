@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XML utility class
-Summary(pl):	%{_pearname} - klasa narz阣ziowa do obr骲ki XML-a
+Summary(pl.UTF-8):   %{_pearname} - klasa narz臋dziowa do obr贸bki XML-a
 Name:		php-pear-%{_pearname}
 Version:	1.1.4
 Release:	1
@@ -31,10 +31,10 @@ arrays, creation of tags, validation of XML names and more.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Zbi髍 metod cz阺to stosowanych podczas pracy z dokumentami XML.
-Mo縧iwo舵 mi阣zy innymi tworzenia listy atrybut體 z tablic, tworzenia
-tag體, sprawdzania poprawno禼i nazw XML oraz wiele innych.
+%description -l pl.UTF-8
+Zbi贸r metod cz臋sto stosowanych podczas pracy z dokumentami XML.
+Mo偶liwo艣膰 mi臋dzy innymi tworzenia listy atrybut贸w z tablic, tworzenia
+tag贸w, sprawdzania poprawno艣ci nazw XML oraz wiele innych.
 
 Ta klasa ma w PEAR status: %{_status}.
 
