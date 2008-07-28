@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - XML utility class
 Summary(pl.UTF-8):	%{_pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
-Version:	1.1.4
-Release:	3
-License:	PHP 2.02
+Version:	1.2.0
+Release:	1
+License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	5b28a79000d47f2bde73c10ca191e402
+# Source0-md5:	f680736898dd77f5f254347aca0789c0
 URL:		http://pear.php.net/package/XML_Util/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -38,6 +38,20 @@ tagów, sprawdzania poprawności nazw XML oraz wiele innych.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+AutoReq:	no
+Requires:	%{name} = %{epoch}:%{version}-%{release}
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -55,3 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/%{_pearname}
