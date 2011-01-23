@@ -20,6 +20,7 @@ Requires:	php-common >= 3:4.2.0
 Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
+Obsoletes:	php-pear-XML_Util-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,20 +37,6 @@ Możliwość między innymi tworzenia listy atrybutów z tablic, tworzenia
 tagów, sprawdzania poprawności nazw XML oraz wiele innych.
 
 Ta klasa ma w PEAR status: %{_status}.
-
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -68,7 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/%{_pearname}
