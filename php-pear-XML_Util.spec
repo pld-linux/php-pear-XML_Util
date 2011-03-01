@@ -7,7 +7,7 @@ Summary:	%{_pearname} - XML utility class
 Summary(pl.UTF-8):	%{_pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
