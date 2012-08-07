@@ -1,13 +1,13 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	Util
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	XML_Util
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - XML utility class
 Summary(pl.UTF-8):	%{_pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
-Release:	3
+Release:	4
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +16,8 @@ URL:		http://pear.php.net/package/XML_Util/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 Obsoletes:	php-pear-XML_Util-tests
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/XML/*.php
