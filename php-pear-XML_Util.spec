@@ -4,7 +4,6 @@
 
 %define		status		stable
 %define		pearname	XML_Util
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - XML utility class
 Summary(pl.UTF-8):	%{pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{pearname}
