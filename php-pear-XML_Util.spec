@@ -7,12 +7,12 @@
 Summary:	%{pearname} - XML utility class
 Summary(pl.UTF-8):	%{pearname} - klasa narzędziowa do obróbki XML-a
 Name:		php-pear-%{pearname}
-Version:	1.4.3
+Version:	1.4.5
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
-# Source0-md5:	00a6543e4adad6aa8815374d0b2f5445
+# Source0-md5:	3e048e6b5822d0d2f7f4d9129fcd5df8
 URL:		http://pear.php.net/package/XML_Util/
 %if %{without bootstrap}
 BuildRequires:	php-pear-PEAR
